@@ -19,15 +19,18 @@ endif()
 
 add_executable(${PROJECT_NAME} ${NET_UTILS_SOURCE})
 
+target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gmock GTest::gtest GTest::gmock_main GTest::gtest_main)
+#target_link_libraries(${PROJECT_NAME} PUBLIC GTest::GTest GTest::Main)
+
+target_include_directories(${PROJECT_NAME} PRIVATE "source")
+
 #set_target_properties(${PROJECT_NAME} 
 #    PROPERTIES 
 #    PUBLIC_HEADER "${HDR_FILES}")
 
-target_include_directories(${PROJECT_NAME} PRIVATE "source")
-
 message(STATUS "INSTALL PREFIX: ${CMAKE_INSTALL_PREFIX}")
 
-add_subdirectory(tests)
+#add_subdirectory(tests)
 
 # TODO: finish configure project
 # fix execution install folder, does not work
