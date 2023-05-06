@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/net-utils.dir/source/main.cpp.o CMakeFiles/net-utils.dir/source/net_util.cpp.o -o net-utils  /usr/lib/libgmock_main.so.1.11.0 /usr/lib/libgtest_main.so.1.11.0 /usr/lib/libgmock.so.1.11.0 /usr/lib/libgtest.so.1.11.0 
